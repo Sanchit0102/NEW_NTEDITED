@@ -84,7 +84,7 @@ async def start_command(client: Client, message: Message):
                 pass
 
 
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>Bot se File {file_auto_delete} minutes me Automatically delete ho jayega File nikalne ke baad forward kr ke rkh liya kro 🤖</b>")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>Bot se File {file_auto_delete} me Automatically delete ho jayega File nikalne ke baad forward kr ke rkh liya kro 🤖</b>")
 
         # Schedule the file deletion
         asyncio.create_task(delete_files(silentbots, client, k))
